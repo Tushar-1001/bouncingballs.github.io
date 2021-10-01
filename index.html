@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .cont {
+            display: flex;
+            /* align-items: center; */
+            /* justify-content: center; */
+            height: 600px;
+            border: 2px solid red;
+        }
+
+        .balls {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            margin-left: 248px;
+            position: relative;
+            top: 541px;
+        }
+
+        #ball1 {
+            background-color: chartreuse;
+            animation: bounce1;
+            animation-duration: 1s; 
+      animation-iteration-count: 10;
+      animation-timing-function: ease-in-out;
+            
+        }
+        @keyframes bounce1{
+            0%{left: 0px; top: 541px;}
+            50%{left: 0px; top: 441px;}
+            100%{left: 0px; top: 541px;}
+        }
+        #ball2 {
+            background-color: rgb(255, 17, 0);
+            animation: bounce2;
+            animation-duration: 1s; 
+      animation-iteration-count: 10;
+      animation-timing-function: ease-in-out;
+        }
+        @keyframes bounce2{
+            0%{left: 0px; top: 541px;}
+            50%{left: 0px; top: 341px;}
+            100%{left: 0px; top: 541px;}
+        }
+
+        #ball3 {
+            background-color: rgb(0, 204, 255);
+            animation: bounce3;
+            animation-duration: 1s; 
+      animation-iteration-count: 10;
+      animation-timing-function: ease-in-out;
+        }
+        @keyframes bounce3{
+            0%{left: 0px; top: 541px;}
+            50%{left: 0px; top:141px;}
+            100%{left: 0px; top: 541px;}
+        }
+
+        #ball4 {
+            background-color: rgb(248, 23, 192);
+            animation: bounce4;
+            animation-duration: 1s; 
+      animation-iteration-count: 10;
+      animation-timing-function: ease-in-out;
+        }
+        @keyframes bounce4{
+            0%{left: 0px; top: 541px;}
+            50%{left: 0px; top:341px;}
+            100%{left: 0px; top: 541px;}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+
+        <div class="balls" id="ball1"></div>
+        <div class="balls" id="ball2"></div>
+        <div class="balls" id="ball3"></div>
+        <div class="balls" id="ball4"></div>
+    </div>
+</body>
+
+</html>
